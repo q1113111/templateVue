@@ -74,7 +74,7 @@ export default {
 <style lang="scss">
 .About {
    text-align: center;
-   padding: 50px 0 100px;
+   padding: 50px 20px 100px;
    background: url("../assets/img/bgc/black.jpg") no-repeat center center / cover;
    &__title {
       font-size: 4.5rem;
@@ -82,11 +82,31 @@ export default {
       font-weight: 300;
       letter-spacing: 10px;
       margin-bottom: 3rem;
+      @include breakpoints-down(lg){
+          font-size: 3.5rem;
+      }
+      @include breakpoints-down(md){
+        font-size: 2.5rem;
+      }
+      @include breakpoints-down(sm){
+        font-size: 1.8rem;
+      }
    }
    &__tag {
       color: $black;
       font-size: 2.2rem;
+      letter-spacing: 5px;
       margin-bottom: 3rem;
+      font-weight: 400;
+      @include breakpoints-down(lg){
+        font-size: 2rem;
+      }
+            @include breakpoints-down(md){
+        font-size: 1.8rem;
+      }
+      @include breakpoints-down(sm){
+        font-size: 1.5rem;
+      }
    }
    &__txt {
       font-family: "Dancing Script", cursive;
@@ -94,6 +114,9 @@ export default {
       font-size: 1.2rem;
       color: $gray-500;
       letter-spacing: 3px;
+      @include breakpoints-down(sm){
+        font-size: 1rem;
+      }
    }
 }
 </style>
