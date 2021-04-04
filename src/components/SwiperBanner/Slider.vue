@@ -48,6 +48,7 @@ export default {
   }
   &__date {
     color: $primary;
+    font-size: 4rem;
   }
 }
 </style>
