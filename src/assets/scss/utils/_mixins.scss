@@ -1,7 +1,18 @@
-@mixin absoluteBg($width:100% ,$height:100%,$left:0,$top:0) {
+$breakpoints-down:(sm:575px,
+    md:767px,
+    lg:991px,
+    xl:1119px) !default;
+
+@mixin breakpoints-down($size) {
+    @media screen and (max-width:map-get($breakpoints-down, $size)) {
+        @content
+    }
+};
+
+@mixin absoluteBg($width:100%, $height:100%, $left:0, $top:0) {
     position: absolute;
     width: $width;
     height: $height;
     left: $left;
     top: $top;
-}
+};

@@ -56,6 +56,9 @@ export default {
 .swiper {
   height: 100vh;
   position: relative;
+  @include breakpoints-down(md){
+    height: 60vh;
+  }
   &-button-next,
   &-button-prev{
     color: $white;
@@ -64,10 +67,18 @@ export default {
     border-radius: 50%;
     transition: .3s;
     border: 2px solid $white;
+      @include breakpoints-down(sm){
+      bottom: 0;
+      top: auto;
+      transform: scale(.4);
+  }
     &:hover{
       color: $primary;
       transform: scale(.7);
       border-color: $primary;
+      @include breakpoints-down(sm){
+        transform: scale(.5);
+      }
     }
   }
 }
