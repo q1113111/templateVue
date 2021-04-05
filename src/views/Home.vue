@@ -5,7 +5,7 @@
       </b-container>
       <b-container class="About" fluid>
          <div class="About__wrap">
-            <h1 class="About__title">About our Parlor</h1>
+            <h1 class="title">About our Parlor</h1>
             <h3 class="About__tag">WELCOME TO OUR STUDIO</h3>
             <div class="About__txt">
                <p>
@@ -27,13 +27,25 @@
             </div>
          </div>
       </b-container>
-        <Masonry />
+      <b-container fluid class="p-xl-5 p-3">
+         <h1 class="title">TATTOO ART WE DO</h1>
+         <Masonry />
+      </b-container>
+      <b-container fluid class="Jumbotron">
+         <p class="Jumbotron__title">WHETHER YOUR FIRST OR LAST, ANY TATTOO</p>
+         <h1 class="Jumbotron__title">WE’LL INK IN HERE WILL BE JUST AWESOME!</h1>
+      </b-container>
+      <b-container fluid class="p-xl-5 p-3">
+         <h1 class="title">MEET OUR TATTOO ARTISTS</h1>
+         <Card/>
+      </b-container>
    </div>
 </template>
 
 <script>
 import swiper from '@/components/SwiperBanner/Swiper.vue'
 import Masonry from '@/components/Masonry'
+import Card from '@/components/Card'
 
 export default {
   data () {
@@ -69,7 +81,8 @@ export default {
   },
   components: {
     swiper,
-    Masonry
+    Masonry,
+    Card
   },
   mounted () {
     console.log('test')
@@ -80,6 +93,7 @@ export default {
 <style lang="scss">
 .About {
    text-align: center;
+   color: $white;
    padding: 50px 20px 100px;
    background: url("../assets/img/bgc/black.jpg") no-repeat center center / cover;
    &__title {
@@ -88,14 +102,14 @@ export default {
       font-weight: 300;
       letter-spacing: 10px;
       margin-bottom: 3rem;
-      @include breakpoints-down(lg){
-          font-size: 3.5rem;
+      @include breakpoints-down(lg) {
+         font-size: 3.5rem;
       }
-      @include breakpoints-down(md){
-        font-size: 2.5rem;
+      @include breakpoints-down(md) {
+         font-size: 2.5rem;
       }
-      @include breakpoints-down(sm){
-        font-size: 1.8rem;
+      @include breakpoints-down(sm) {
+         font-size: 1.8rem;
       }
    }
    &__tag {
@@ -104,14 +118,14 @@ export default {
       letter-spacing: 5px;
       margin-bottom: 3rem;
       font-weight: 400;
-      @include breakpoints-down(lg){
-        font-size: 2rem;
+      @include breakpoints-down(lg) {
+         font-size: 2rem;
       }
-            @include breakpoints-down(md){
-        font-size: 1.8rem;
+      @include breakpoints-down(md) {
+         font-size: 1.8rem;
       }
-      @include breakpoints-down(sm){
-        font-size: 1.5rem;
+      @include breakpoints-down(sm) {
+         font-size: 1.5rem;
       }
    }
    &__txt {
@@ -120,8 +134,31 @@ export default {
       font-size: 1.2rem;
       color: $gray-500;
       letter-spacing: 3px;
-      @include breakpoints-down(sm){
-        font-size: 1rem;
+      @include breakpoints-down(sm) {
+         font-size: 1rem;
+      }
+   }
+}
+.Jumbotron {
+   background: url("/images/banner/banner5.jpg") no-repeat center center / cover;
+   text-align: center;
+   padding: 130px 30px;
+   position: relative;
+   &::before {
+      content: "";
+      @include absoluteBg();
+      background-color: rgba($color: $black, $alpha: 0.3);
+   }
+   &__title {
+      color: $gray-300;
+      font-size: 3rem;
+      letter-spacing: 10px;
+      margin: 70px 0;
+      position: relative;
+      line-height: 4rem;
+      z-index: 2;
+      @include breakpoints-down(xl) {
+         font-size: 2rem;
       }
    }
 }

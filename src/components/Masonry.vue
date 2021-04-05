@@ -1,6 +1,5 @@
 <template>
-   <b-container fluid class="p-xl-5 p-3">
-      <h1 class="title">TATTOO ART WE DO</h1>
+
       <div class="card"  v-images-loaded:on.progress="imageProgress">
          <div class="card__item" v-for="(list, index) of cardList" :key="index">
             <div class="card__pic">
@@ -10,7 +9,7 @@
             <span class="card__tag">{{ list.tag }}</span>
          </div>
       </div>
-   </b-container>
+
 </template>
 
 <script>
@@ -80,16 +79,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.title{
-  font-size: 3rem;
-  letter-spacing:10px;
-  text-align: center;
-  padding: 30px 0 50px;
-  @include breakpoints-down(md){
-    font-size: 2rem;
-    padding: 20px 0 30px;
-  }
-}
 .card {
    &__item {
       width: calc(100% / 3);
