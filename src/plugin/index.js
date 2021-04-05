@@ -9,7 +9,7 @@ Vue.use(LayoutPlugin)
 
 webFont.load({
   google: {
-    families: ['Noto Sans TC', 'sans-serif', 'Dancing Script', 'cursive']
+    families: ['Noto Sans TC:100,400,700,900', 'sans-serif', 'Dancing Script', 'cursive']
   }
 })
 Vue.use(webFont)

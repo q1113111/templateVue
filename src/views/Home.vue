@@ -27,11 +27,13 @@
             </div>
          </div>
       </b-container>
+        <Masonry />
    </div>
 </template>
 
 <script>
 import swiper from '@/components/SwiperBanner/Swiper.vue'
+import Masonry from '@/components/Masonry'
 
 export default {
   data () {
@@ -40,33 +42,37 @@ export default {
         {
           title: 'InkPink',
           date: 'SINCE1999',
-          src: './img/banner/banner.jfif'
+          src: './images/banner/banner.jfif'
         },
         {
           title: 'InkRed',
           date: 'SINCE1998',
-          src: './img/banner/banner1.jfif'
+          src: './images/banner/banner1.jfif'
         },
         {
           title: 'InkBlue',
           date: 'SINCE1997',
-          src: './img/banner/banner2.jfif'
+          src: './images/banner/banner2.jfif'
         },
         {
           title: 'InkGreen',
           date: 'SINCE1996',
-          src: './img/banner/banner3.jfif'
+          src: './images/banner/banner3.jfif'
         },
         {
           title: 'InkWhite',
           date: 'SINCE1995',
-          src: './img/banner/banner4.jfif'
+          src: './images/banner/banner4.jfif'
         }
       ]
     }
   },
   components: {
-    swiper
+    swiper,
+    Masonry
+  },
+  mounted () {
+    console.log('test')
   }
 }
 </script>
