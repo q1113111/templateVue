@@ -106,8 +106,7 @@ export default {
      }
      &::before{
        content: '+';
-      @include absoluteBg(auto,auto,50%,50%);
-      transform: translate(-50%,-50%);
+      @include setPosition();
       font-size: 4rem;
       font-weight: 100;
       color: $gray-400;

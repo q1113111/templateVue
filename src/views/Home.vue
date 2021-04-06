@@ -39,6 +39,9 @@
          <h1 class="title">MEET OUR TATTOO ARTISTS</h1>
          <Card/>
       </b-container>
+       <b-container fluid class="bg-message py-5 px-0">
+          <Message/>
+      </b-container>
    </div>
 </template>
 
@@ -46,6 +49,7 @@
 import swiper from '@/components/SwiperBanner/Swiper.vue'
 import Masonry from '@/components/Masonry'
 import Card from '@/components/Card'
+import Message from '@/components/Message'
 
 export default {
   data () {
@@ -82,7 +86,8 @@ export default {
   components: {
     swiper,
     Masonry,
-    Card
+    Card,
+    Message
   },
   mounted () {
     console.log('test')
@@ -140,7 +145,7 @@ export default {
    }
 }
 .Jumbotron {
-   background: url("/images/banner/banner5.jpg") no-repeat center center / cover;
+   background: url("../assets/img/bgc/banner5.jpg") no-repeat center center / cover;
    text-align: center;
    padding: 130px 30px;
    position: relative;
@@ -161,5 +166,8 @@ export default {
          font-size: 2rem;
       }
    }
+}
+.bg-message{
+       background: url('../assets/img/bgc/banner4.jpg');
 }
 </style>

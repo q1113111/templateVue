@@ -1,7 +1,7 @@
 $breakpoints-down:(sm:575px,
     md:767px,
     lg:991px,
-    xl:1119px) !default;
+    xl:1199px) !default;
 
 @mixin breakpoints-down($size) {
     @media screen and (max-width:map-get($breakpoints-down, $size)) {
@@ -16,3 +16,13 @@ $breakpoints-down:(sm:575px,
     left: $left;
     top: $top;
 };
+@mixin setPosition($left:50%,$top:50%,$x:-50%,$y:-50%) {
+    position: absolute;
+    left: $left;
+    top: $top;
+    transform: translate($x,$y);
+}
+@mixin border($radius:0,$px:1px,$type:solid,$color:transparent) {
+    border-radius: $radius;
+    border: $px $type $color;
+}

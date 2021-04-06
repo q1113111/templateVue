@@ -3,3 +3,21 @@
     background-color: rgba($color: $black, $alpha: .3);
     z-index: 2;
 }
+
+.title {
+    font-size: 3rem;
+    letter-spacing: 10px;
+    text-align: center;
+    padding: 30px 0 50px;
+
+    @include breakpoints-down(md) {
+        font-size: 2rem;
+        padding: 20px 0 30px;
+    }
+}
+
+.icon {
+    &__link {
+        padding: 0 15px;
+    }
+}

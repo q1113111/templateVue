@@ -6,11 +6,6 @@ import store from './store'
 import './plugin/index.js'
 
 Vue.config.productionTip = false
-Vue.prototype.$log = (...args) => {
-  if (process.NODE_ENV === 'develope') {
-    console.log(args)
-  }
-}
 
 new Vue({
   router,
