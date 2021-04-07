@@ -3,9 +3,11 @@ import webFont from 'webfontloader'
 import 'swiper/swiper-bundle.css'
 import swiper, { Navigation, Pagination, Autoplay, EffectFade, Parallax } from 'swiper'
 import { LayoutPlugin } from 'bootstrap-vue'
+import { firestorePlugin } from 'vuefire'
 
 swiper.use([Navigation, Pagination, Autoplay, EffectFade, Parallax])
 Vue.use(LayoutPlugin)
+Vue.use(firestorePlugin)
 
 webFont.load({
   google: {
