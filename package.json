@@ -15,7 +15,7 @@
     "firebase": "^8.3.2",
     "masonry-layout": "^4.2.2",
     "swiper": "^6.5.3",
-    "vee-validate": "^4.2.4",
+    "vee-validate": "^3.4.5",
     "vue": "^2.6.12",
     "vue-awesome-swiper": "^4.1.1",
     "vue-images-loaded": "^1.1.2",

@@ -16,7 +16,7 @@
 import Masonry from 'masonry-layout'
 import imagesLoaded from 'vue-images-loaded'
 export default {
-
+  name: 'Masonry',
   data () {
     return {
       loaded: '',

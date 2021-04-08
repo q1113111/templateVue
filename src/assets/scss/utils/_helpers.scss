@@ -21,3 +21,13 @@
         padding: 0 15px;
     }
 }
+//bootstarp-vue from
+.form-group{
+    position: relative;
+}
+.invalid-feedback{
+    position: absolute;
+    left: 10px;
+    bottom: -25px;
+    letter-spacing: 5px;
+}

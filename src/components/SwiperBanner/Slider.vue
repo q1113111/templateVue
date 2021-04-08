@@ -10,6 +10,7 @@
 
 <script>
 export default {
+  name: 'slider',
   props: {
     banner: Object,
     dataClass: String
@@ -31,8 +32,15 @@ export default {
       top: 50%;
       z-index: 10;
       transform: translate(-50%, -50%);
-      font-size: 5rem;
       text-align: center;
+
+      &--show {
+         opacity: 1;
+      }
+   }
+   &__title {
+      color: $white;
+      font-size: 5rem;
       letter-spacing: 3rem;
       line-height: 15rem;
       @include breakpoints-down(xl) {
@@ -41,21 +49,17 @@ export default {
       @include breakpoints-down(md) {
          font-size: 2.5rem;
          letter-spacing: 2rem;
-            line-height: 10rem;
+         line-height: 10rem;
       }
       @include breakpoints-down(sm) {
          font-size: 2rem;
          letter-spacing: 1rem;
       }
-      &--show {
-         opacity: 1;
-      }
-   }
-   &__title {
-      color: $white;
    }
    &__date {
       color: $primary;
+      letter-spacing: 3rem;
+      line-height: 15rem;
       font-size: 4rem;
       @include breakpoints-down(xl) {
          font-size: 2rem;
