@@ -85,7 +85,7 @@ export default {
           type: 'email',
           placeholder: 'Email',
           value: 'email',
-          rules: 'email'
+          rules: 'email|required'
         }
       ],
       input: {
