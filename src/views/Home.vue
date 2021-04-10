@@ -42,6 +42,9 @@
        <b-container fluid class="bg-message py-5 px-0">
           <Message/>
       </b-container>
+      <b-container fluid class="p-xl-5 p-3 bg-dark">
+         <Footer/>
+      </b-container>
    </div>
 </template>
 
@@ -50,7 +53,7 @@ import swiper from '@/components/SwiperBanner/Swiper.vue'
 import Masonry from '@/components/Masonry'
 import Card from '@/components/Card'
 import Message from '@/components/Message'
-
+import Footer from '@/components/Footer/Footer'
 export default {
   data () {
     return {
@@ -87,7 +90,8 @@ export default {
     swiper,
     Masonry,
     Card,
-    Message
+    Message,
+    Footer
   },
   mounted () {
     console.log('test')
