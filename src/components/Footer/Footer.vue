@@ -19,8 +19,7 @@ export default {
         {
           name: '',
           title: 'ABOUT',
-          txt:
-                  'All of our tattoo and piercing masters here are masters indeed... Their artistic precision and perception are nothing short of perfect!'
+          txt: 'All of our tattoo and piercing masters here are masters indeed... Their artistic precision and perception are nothing short of perfect!'
         },
         {
           name: 'NAVIGATIONS',
@@ -44,11 +43,11 @@ export default {
 </script>
 <style lang="scss" >
 .footer {
-   padding: 150px 15px 220px;
-   max-width: 1440px;
+   padding: 150px 15px;
+   max-width: 1600px;
    margin: auto;
    @include breakpoints-down(lg){
-     padding: 75px 15px 110px;
+     padding: 75px 15px;
    }
    &__list {
       display: flex;

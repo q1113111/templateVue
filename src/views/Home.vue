@@ -45,6 +45,9 @@
       <b-container fluid class="p-xl-5 p-3 bg-dark">
          <Footer/>
       </b-container>
+          <b-container fluid class="p-xl-5 p-3 bg-lightDark">
+         <CopyRight/>
+      </b-container>
    </div>
 </template>
 
@@ -54,6 +57,7 @@ import Masonry from '@/components/Masonry'
 import Card from '@/components/Card'
 import Message from '@/components/Message'
 import Footer from '@/components/Footer/Footer'
+import CopyRight from '@/components/Footer/CopyRight'
 export default {
   data () {
     return {
@@ -91,7 +95,8 @@ export default {
     Masonry,
     Card,
     Message,
-    Footer
+    Footer,
+    CopyRight
   },
   mounted () {
     console.log('test')
