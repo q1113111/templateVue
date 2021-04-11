@@ -4,7 +4,7 @@
          <div class="card__pic">
             <img :src="item.src" alt="" />
             <div class="icon icon-people">
-               <a class="icon__link" href=""><i class="fab fa-facebook-f"></i></a>
+               <a class="icon__link" href="#" v-scroll-to="'#app'"><i class="fab fa-facebook-f"></i></a>
                <a class="icon__link" href=""><i class="fab fa-twitter"></i></a>
                <a class="icon__link" href=""><i class="fab fa-instagram"></i></a>
                <a class="icon__link" href=""><i class="fab fa-youtube"></i></a>

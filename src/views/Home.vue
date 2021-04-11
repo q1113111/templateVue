@@ -1,5 +1,6 @@
 <template>
    <div>
+      <Arrow/>
       <b-container fluid class="px-0">
          <swiper :banners="banners"> </swiper>
       </b-container>
@@ -45,7 +46,7 @@
       <b-container fluid class="p-xl-5 p-3 bg-dark">
          <Footer/>
       </b-container>
-          <b-container fluid class="p-xl-5 p-3 bg-lightDark">
+          <b-container fluid class="p-xl-5 p-3 bg-lightDark z-2">
          <CopyRight/>
       </b-container>
    </div>
@@ -58,6 +59,7 @@ import Card from '@/components/Card'
 import Message from '@/components/Message'
 import Footer from '@/components/Footer/Footer'
 import CopyRight from '@/components/Footer/CopyRight'
+import Arrow from '@/components/Arrow'
 export default {
   data () {
     return {
@@ -96,7 +98,8 @@ export default {
     Card,
     Message,
     Footer,
-    CopyRight
+    CopyRight,
+    Arrow
   },
   mounted () {
     console.log('test')

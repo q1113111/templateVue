@@ -4,12 +4,15 @@ import 'swiper/swiper-bundle.css'
 import swiper, { Navigation, Pagination, Autoplay, EffectFade, Parallax } from 'swiper'
 import { firestorePlugin } from 'vuefire'
 import { LayoutPlugin, FormInputPlugin, FormPlugin, FormGroupPlugin, FormTextareaPlugin } from 'bootstrap-vue'
+import VueScrollTo from 'vue-scrollto'
 
+Vue.use(VueScrollTo)
 Vue.use(LayoutPlugin)
 Vue.use(FormTextareaPlugin)
 Vue.use(FormInputPlugin)
 Vue.use(FormPlugin)
 Vue.use(FormGroupPlugin)
+
 swiper.use([Navigation, Pagination, Autoplay, EffectFade, Parallax])
 Vue.use(firestorePlugin)
 
