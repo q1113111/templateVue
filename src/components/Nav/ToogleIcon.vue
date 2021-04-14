@@ -1,6 +1,6 @@
 <template>
-   <div :class="$attrs.toogle ? 'is-active' : ''" class="toogleIcon" @click="navBarHandle" >
-      <div   class="toogleIcon__box">
+   <div :class="$attrs.toogle ? 'is-active' : ''" class="toogleIcon" @click="navBarHandle">
+      <div class="toogleIcon__box">
          <span class="toogleIcon__span"></span><span class="toogleIcon__span"></span
          ><span class="toogleIcon__span"></span>
       </div>
@@ -20,10 +20,11 @@ export default {
    position: fixed;
    right: $spacer;
    top: $spacer;
+   cursor: pointer;
    padding: $spacer;
    z-index: 99;
    &__span {
-       transition: .3s;
+      transition: 0.3s;
       width: 35px;
       display: block;
       height: 2px;
@@ -34,13 +35,13 @@ export default {
       margin-top: $spacer * 0.5;
    }
    &.is-active &__span:nth-child(1) {
-       transform: rotate(-45deg) translate(-10px,18px);
+opacity: 0;
    }
    &.is-active &__span:nth-child(2) {
-       opacity: 0;
+           transform: rotate(-45deg) translate(-1px, -1px);
    }
    &.is-active &__span:nth-child(3) {
-        transform: rotate(45deg) translate(5px,-5px);;
+      transform: rotate(45deg) translate(-6px, -7px);
    }
 }
 </style>
