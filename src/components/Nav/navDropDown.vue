@@ -1,9 +1,9 @@
 <template>
-         <ul class="dropDown" :class="toggle?'is-show':''">
-            <li class="dropDown__list"  v-for="(nav, index) of navList" :key="index">
-               <router-link :to="nav.link" class="dropDown__link">{{ nav.txt }}</router-link>
-            </li>
-         </ul>
+   <ul class="dropDown" :class="toggle ? 'is-show' : ''">
+      <li class="dropDown__list" v-for="(nav, index) of navList" :key="index">
+         <router-link :to="nav.link" class="dropDown__link">{{ nav.txt }}</router-link>
+      </li>
+   </ul>
 </template>
 <script>
 export default {
@@ -22,7 +22,7 @@ export default {
 <style lang="scss" scoped>
 .dropDown {
    opacity: 0;
-   transition: opacity 0.3s .5s;
+   transition: opacity 0.3s 0.5s;
    margin: -$spacer 0 $spacer * 2 $spacer * 3.5;
    padding-left: $spacer;
    border-left: 2px solid $gray-800;

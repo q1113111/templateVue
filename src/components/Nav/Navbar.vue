@@ -1,29 +1,29 @@
 <template>
    <transition name="nav">
-     <nav v-show="slide" class="nav">
-        <div class="logo">
-           <router-link :to="{ name: 'Home' }"
-              ><img class="logo__img" src="../../assets/img/logo.png" alt=""
-           /></router-link>
-        </div>
-        <ul class="nav__list">
-           <li class="nav__item" :class="item.toggle ? 'slide' : ''" v-for="(item, index) of navList" :key="index">
-              <div class="nav__body" v-if="item.list">
-                 <a
-                    href="javascript:;"
-                    @click="toggleHandler(index)"
-                    :class="item.toggle ? 'is-active' : ''"
-                    class="nav__link"
-                    ><i :class="item.icon + ' nav__icon'"></i>{{ item.title }}</a
-                 >
-                 <navDropDwon :navList="item.list" :toggle="item.toggle" />
-              </div>
-              <router-link v-else :to="item.router" class="nav__link"
-                 ><i :class="item.icon + ' nav__icon'"></i>{{ item.title }}</router-link
-              >
-           </li>
-        </ul>
-     </nav>
+      <nav v-show="slide" class="nav">
+         <div class="logo">
+            <router-link :to="{ name: 'Home' }"
+               ><img class="logo__img" src="../../assets/img/logo.png" alt=""
+            /></router-link>
+         </div>
+         <ul class="nav__list">
+            <li class="nav__item" :class="item.toggle ? 'slide' : ''" v-for="(item, index) of navList" :key="index">
+               <div class="nav__body" v-if="item.list">
+                  <a
+                     href="javascript:;"
+                     @click="toggleHandler(index)"
+                     :class="item.toggle ? 'is-active' : ''"
+                     class="nav__link"
+                     ><i :class="item.icon + ' nav__icon'"></i>{{ item.title }}</a
+                  >
+                  <navDropDwon :navList="item.list" :toggle="item.toggle" />
+               </div>
+               <router-link v-else :to="item.router" class="nav__link"
+                  ><i :class="item.icon + ' nav__icon'"></i>{{ item.title }}</router-link
+               >
+            </li>
+         </ul>
+      </nav>
    </transition>
 </template>
 <script>
@@ -110,6 +110,7 @@ export default {
 <style lang="scss">
 .nav {
    position: fixed;
+   overflow: hidden;
    z-index: 100;
    height: 100%;
    max-width: 300px;
@@ -123,8 +124,8 @@ export default {
       transition: 0.65s;
       &.slide {
          max-height: 200px;
-         &::before{
-           width: 100%;
+         &::before {
+            width: 100%;
          }
       }
       &::before {
@@ -141,20 +142,21 @@ export default {
    &__link {
       color: $white;
       display: block;
+      width: 300px;
       padding: $spacer * 2 $spacer * 1.25;
       font-size: 1.1rem;
       &:hover > {
-        .nav__icon {
-         transform: scale(1.3);
-         margin-right: $spacer;
+         .nav__icon {
+            transform: scale(1.3);
+            margin-right: $spacer;
+         }
       }
-      }
-      &.is-active{
-        color: darken($primary, 8%);
-       .nav__icon {
-         transform: scale(1.3);
-         margin-right: $spacer;
-      }
+      &.is-active {
+         color: darken($primary, 8%);
+         .nav__icon {
+            transform: scale(1.3);
+            margin-right: $spacer;
+         }
       }
    }
    &__icon {
@@ -165,5 +167,18 @@ export default {
 }
 .logo {
    border-bottom: 1px solid $gray-800;
+   width: 300px;
+}
+.nav-enter,
+.nav-leave-to {
+   max-width: 0;
+}
+.nav-enter-active,
+.nav-leave-active {
+   transition:  .5s;
+}
+.nav-leave,
+.nav-enter-to {
+   max-width: 300px;
 }
 </style>

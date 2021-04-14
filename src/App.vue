@@ -1,7 +1,7 @@
 <template>
    <div id="app">
       <div id="nav">
-         <ToggleIcon @navClick="navBar = !navBar" />
+         <ToggleIcon :toogle="navBar" @navClick="navBar = !navBar" />
          <Navbar :slide="navBar" />
       </div>
       <router-view />
