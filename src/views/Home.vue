@@ -60,6 +60,7 @@ import Message from '@/components/Message'
 import Footer from '@/components/Footer/Footer'
 import CopyRight from '@/components/Footer/CopyRight'
 import Arrow from '@/components/Arrow'
+
 export default {
   data () {
     return {
@@ -100,9 +101,7 @@ export default {
     Footer,
     CopyRight,
     Arrow
-  },
-  mounted () {
-    console.log('test')
+
   }
 }
 </script>

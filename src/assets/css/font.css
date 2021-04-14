@@ -564,8 +564,18 @@ readers do not read off random characters that represent fas */
 .fa-donate:before {
   content: "\f4b9";
 }
-
-
+.fa-cart-arrow-down:before {
+  content: "\e900";
+}
+.fa-address-card:before {
+  content: "\e901";
+}
+.fa-camera-retro:before {
+  content: "\e902";
+}
+.fa-newspaper:before {
+  content: "\e903";
+}
 .sr-only {
   border: 0;
   clip: rect(0, 0, 0, 0);
