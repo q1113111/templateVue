@@ -38,7 +38,7 @@ export default {
 opacity: 0;
    }
    &.is-active &__span:nth-child(2) {
-           transform: rotate(-45deg) translate(-1px, -1px);
+           transform: rotate(-45deg) translate(-3px, 0px);
    }
    &.is-active &__span:nth-child(3) {
       transform: rotate(45deg) translate(-6px, -7px);
