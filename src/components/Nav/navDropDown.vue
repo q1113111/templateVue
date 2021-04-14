@@ -22,6 +22,7 @@ export default {
 <style lang="scss" scoped>
 .dropDown {
    opacity: 0;
+   width: 244px;
    transition: opacity 0.3s 0.5s;
    margin: -$spacer 0 $spacer * 2 $spacer * 3.5;
    padding-left: $spacer;
