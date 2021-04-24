@@ -33,24 +33,7 @@ button {
         outline: none;
     }
 }
-.btn{
-    padding: 10px;
-    @include border(8px);
-    transition: .3s;
-}
-.btn.btn-secondary{
-    color: darken($primary,15%);
-    box-shadow: 0px 6px 15px 5px #000000;
-    &:hover{
-        color: $gray-200;
-    }
-}
-.btn:disabled{
-    color: $gray-600;
-    &:hover{
-        color: $gray-600;
-    }
-}
+
 input {
     border: none;
     outline: none;
