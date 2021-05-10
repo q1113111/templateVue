@@ -1,10 +1,10 @@
-$breakpoints-down:(sm:575px,
-    md:767px,
-    lg:991px,
-    xl:1199px) !default;
+$breakpoints-down: (sm:575px,
+md:767px,
+lg:991px,
+xl:1199px) !default;
 
 @mixin breakpoints-down($size) {
-    @media screen and (max-width:map-get($breakpoints-down, $size)) {
-        @content
-    }
-};
+  @media screen and (max-width: map-get($breakpoints-down, $size)) {
+    @content;
+  }
+}

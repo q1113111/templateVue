@@ -1,54 +1,55 @@
 body {
-    letter-spacing: 0;
-    font-weight: normal;
-    font-family: 'Noto Sans TC', sans-serif;
+  font-family: 'Noto Sans TC', sans-serif;
+  font-weight: normal;
+  letter-spacing: 0;
 }
 
 a {
-    transition: 0.3s linear;
-    text-decoration: none;
+  text-decoration: none;
+  transition: 0.3s linear;
 
-    &:hover {
-        text-decoration: none;
-    }
+  &:hover {
+    text-decoration: none;
+  }
 }
 
 img {
-    max-width: 100%;
-    vertical-align: top;
+  max-width: 100%;
+  vertical-align: top;
 }
 
 ul,
 ol {
-    margin-top: 0;
-    list-style: none;
-    padding-left: 0;
+  list-style: none;
+  margin-top: 0;
+  padding-left: 0;
 }
 
 button {
-    background: transparent;
-    border: none;
+  background: transparent;
+  border: 0;
 
-    &:focus {
-        outline: none;
-    }
+  &:focus {
+    outline: none;
+  }
 }
 
 input {
-    border: none;
-    outline: none;
+  border: 0;
+  outline: none;
 }
-.form-control{
-    font-size: 14px;
-    padding: 1.5rem 1rem;
+
+.form-control {
+  font-size: 14px;
+  padding: 1.5rem 1rem;
 }
 
 p {
-    font-weight: lighter;
+  font-weight: lighter;
 }
 
 @media screen and (max-width: 575px) {
-    html {
-        font-size: 14px;
-    }
+  html {
+    font-size: 14px;
+  }
 }
