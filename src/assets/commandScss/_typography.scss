@@ -1,0 +1,59 @@
+body {
+  font-size: 14px;
+  font-family: 'Noto Sans TC', sans-serif;
+  font-weight: normal;
+  letter-spacing: 0;
+  line-height: 24px;
+}
+
+a {
+  text-decoration: none;
+  transition: 0.3s linear;
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+img {
+  max-width: 100%;
+  vertical-align: top;
+}
+
+button {
+  background: transparent;
+  border: 0;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+input {
+  border: 0;
+  outline: none;
+}
+
+.flex {
+  display: flex;
+
+  &-wrap {
+    flex-wrap: wrap;
+  }
+
+  &-jc-cn {
+    justify-content: center;
+  }
+
+  &-jc-sb {
+    justify-content: space-between;
+  }
+
+  &-ai-cn {
+    align-items: center;
+  }
+}
+
+.container {
+  padding: 0 16px;
+}

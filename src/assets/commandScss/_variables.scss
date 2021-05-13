@@ -1,0 +1,42 @@
+$primary: #162236;
+$secondary: #0589d7;
+$light: #fafafa;
+$bule-100: #879aaf;
+$bule-200: #222f43;
+$bule-300: #0f466e;
+$info: #e1533b;
+$gray: #0000004d;
+$deep: #1e2e48;
+$dark: #0b1021;
+$white: #fff;
+
+$spacer: 16px !default;
+$spacers: () !default;
+/* stylelint-disable function-parentheses-space-inside */
+$spacers: map-merge(
+  (
+    0: $spacer * 0,
+    1: $spacer * 0.5,
+    2: $spacer * 0.75,
+    3: $spacer,
+    4: $spacer * 1.25,
+    5: $spacer * 1.5
+  ),
+  $spacers
+);
+
+$theme-colors: () !default;
+$theme-colors: map-merge(
+  (
+    'primary': $primary,
+    'secondary': $secondary,
+    'light': $light,
+    'info': $info,
+    'gray': $gray,
+    'deep': $deep,
+    'muted': $bule-100,
+    'dark': $dark,
+    'white': $white
+  ),
+  $theme-colors
+);

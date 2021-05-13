@@ -1,0 +1,51 @@
+@each $name, $length in $spacers {
+  .mt-#{$name} {
+    margin-top: $length;
+  }
+  .mb-#{$name} {
+    margin-bottom: $length;
+  }
+  .ml-#{$name} {
+    margin-left: $length;
+  }
+  .mr-#{$name} {
+    margin-right: $length;
+  }
+  .mx-#{$name} {
+    margin-right: $length;
+    margin-left: $length;
+  }
+  .my-#{$name} {
+    margin-bottom: $length;
+    margin-top: $length;
+  }
+  .pt-#{$name} {
+    padding-top: $length;
+  }
+  .pb-#{$name} {
+    padding-bottom: $length;
+  }
+  .pl-#{$name} {
+    padding-left: $length;
+  }
+  .pr-#{$name} {
+    padding-right: $length;
+  }
+  .px-#{$name} {
+    padding-right: $length;
+    padding-left: $length;
+  }
+  .py-#{$name} {
+    padding-top: $length;
+    padding-bottom: $length;
+  }
+}
+
+@each $name, $color in $theme-colors {
+  .text-#{$name} {
+    color: $color;
+  }
+  .bg-#{$name} {
+    background-color: $color;
+  }
+}
